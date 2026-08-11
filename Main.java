@@ -2,8 +2,9 @@ public class Main
 {
     public static void main(String args[])
     {
-        Book b1 = new Book("Eye of the World", "Robert Jordan", 1997);
+        Library myLibrary = new Library();
+        myLibrary.loadBooksFromFile("data.dat");    
 
-        System.out.println(b1);
+        System.out.println(myLibrary);
     }
 }
